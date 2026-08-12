@@ -22,16 +22,19 @@ let package = Package(
         .target(
             name: "Kingfisher_Aggregation",
             dependencies: ["Kingfisher"],
+            resources: [.process("PrivacyInfo.xcprivacy")],
+            packageAccess: false,
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Kingfisher",
-            url: "https://github.com/swift-precompiled/Kingfisher/releases/download/7.12.0/Kingfisher-989a76c0956eb809a03c37e6c2de1981b4f00766f2069848a1f3a7e220dbe365.xcframework.zip",
-            checksum: "989a76c0956eb809a03c37e6c2de1981b4f00766f2069848a1f3a7e220dbe365"
+            url: "https://github.com/swift-precompiled/Kingfisher/releases/download/7.12.0/Kingfisher-2d1e5a75cb56cc50ba722855131b7d263c027b39c323dc6558b93cce1d41661b.xcframework.zip",
+            checksum: "2d1e5a75cb56cc50ba722855131b7d263c027b39c323dc6558b93cce1d41661b"
         ),
         .target(
             name: "Kingfisher_PrecompiledProduct",
-            dependencies: ["Kingfisher_Aggregation"]
+            dependencies: ["Kingfisher_Aggregation"],
+            packageAccess: false
         )
     ]
 )
