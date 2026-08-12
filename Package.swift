@@ -15,7 +15,7 @@ let package = Package(
     products: [
         .library(
             name: "Kingfisher",
-            targets: ["Kingfisher_PrecompiledProduct"]
+            targets: ["Kingfisher", "Kingfisher_PrecompiledProduct"]
         )
     ],
     targets: [
@@ -26,8 +26,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Kingfisher",
-            url: "https://github.com/swift-precompiled/Kingfisher/releases/download/7.12.0/Kingfisher-4ee2091e366c447ae49be559db8734874aa63ee640eb81fc18fce9b27cb8813f.xcframework.zip",
-            checksum: "4ee2091e366c447ae49be559db8734874aa63ee640eb81fc18fce9b27cb8813f"
+            url: "https://github.com/swift-precompiled/Kingfisher/releases/download/7.12.0/Kingfisher-989a76c0956eb809a03c37e6c2de1981b4f00766f2069848a1f3a7e220dbe365.xcframework.zip",
+            checksum: "989a76c0956eb809a03c37e6c2de1981b4f00766f2069848a1f3a7e220dbe365"
         ),
         .target(
             name: "Kingfisher_PrecompiledProduct",
